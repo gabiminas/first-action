@@ -1,0 +1,11 @@
+name: First Workflow
+on: workflow_dispatch #isso significa que esse workflow vai iniciar manualmente
+jobs:
+  first-job: #vc pode escolher qq nome
+    runs-on: ubuntu-latest #aqui definimos o sistema operacional que rodará - o github tem uma lista com os que são permitidos
+    steps:
+      - name: Print greeting #o nome é opcional mas ajuda a identificar qual step etá rodando
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
+    
